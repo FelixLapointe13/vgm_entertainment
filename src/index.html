@@ -1,147 +1,98 @@
-<!doctype html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Composante YouTube | Timtools</title>
+{% include "_partials/_header.html" %}
 
-        <link rel="stylesheet" href="styles/main.css" />
-
-        <script src="scripts/main.js" defer></script>
-    </head>
-
-    <body>
-        <div class="site-container">
-            <!-- Zone header -->
-            <header class="header">
-                <a href="index.html" class="header__brand"><img src="assets/images/logo-timtools.svg" alt="TimTools" /></a>
-                <nav class="nav-primary">
-                    <ul>
-                        <li>
-                            <a href="#" class="nav-primary__item">Menu 1</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-primary__item">Menu 2</a>
-                        </li>
-                        <li class="right-nav">
-                            <a href="#" class="nav-primary__item">Menu 3</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-primary__item">Menu 4</a>
-                        </li>
-                    </ul>
-                </nav>
-                <button class="header__toggle js-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </header>
-
-            <!-- Zone hero -->
-            <section class="hero">
-                <div class="wrapper grid">
-                    <h1 class="hero__title">
-                        <br />
-                        Le coffre à outils
-                        <br />
-                        que tu&nbsp;attendais
-                    </h1>
-                    <div class="hero__content card">héro</div>
-                </div>
-            </section>
-
-            <section class="section section--full">
-                <h2 class="section__title">Le plus beau vidéo de ta vie</h2>
-                <div class="video" data-component="YouTube" data-video-id="l-Ab72G6Q6o">
-                    <div class="video__media js-video">
-                        <img class="js-poster" src="assets/images/poster1.jpg" alt="thumbnail Hange" />
-                        <svg class="icon icon--stroke icon--xl">
-                            <use href="#icon-play"></use>
-                        </svg>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Zone grille -->
-            <section class="section">
-                <div class="wrapper">
-                    <h2 class="section__title">En veux-tu des vidéos? En v'là!</h2>
-                    <div class="grid-2">
-                        <div class="video" data-component="YouTube" data-no-controls data-video-id="1XSysnj2Bk0">
-                            <div class="video__media js-video">
-                                <img class="js-poster" src="assets/images/poster2.jpg" alt="thumbnail Walter" />
-                                <svg class="icon icon--stroke icon--xl">
-                                    <use href="#icon-play"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="video" data-component="YouTube" data-video-id="xc0Rs7FPPXI">
-                            <div class="video__media js-video">
-                                <img class="js-poster" src="assets/images/poster3.jpg" alt="thumbnail DougDoug" />
-                                <svg class="icon icon--stroke icon--xl">
-                                    <use href="#icon-play"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="video" data-component="YouTube" data-video-id="10oLpNWf7ME">
-                            <div class="video__media js-video">
-                                <img class="js-poster" src="assets/images/poster4.jpg" alt="thumbnail SenatorArmstrong" />
-                                <svg class="icon icon--stroke icon--xl">
-                                    <use href="#icon-play"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="video" data-component="YouTube" data-video-id="C6Okf0NeyQs">
-                            <div class="video__media js-video">
-                                <img class="js-poster" src="assets/images/poster5.jpg" alt="thumbnail Charles" />
-                                <svg class="icon icon--stroke icon--xl">
-                                    <use href="#icon-play"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Zone articles -->
-            <section class="section">
-                <div class="wrapper">
-                    <div class="articles">
-                        <div class="article">
-                            <div class="card">photo 1</div>
-                            <div>
-                                <h2>Vous n'en croirez pas vos yeux</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ratione, eos explicabo soluta numquam placeat provident
-                                    fugit hic vitae temporibus officiis voluptates odit culpa distinctio inventore quos qui maxime! Aut!
-                                </p>
-                                <a href="#">En savoir plus</a>
-                            </div>
-                        </div>
-                        <div class="article">
-                            <div class="card">photo 2</div>
-                            <div>
-                                <h2>Découvrez pourquoi CW4 est le meilleur cours de tous les temps</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero illo excepturi porro quam quia iure.</p>
-                                <a href="#">En savoir plus</a>
-                            </div>
-                        </div>
-                        <div class="article">
-                            <div class="card">photo 3</div>
-                            <div>
-                                <h2>Cette technique est la dernière dont vous aurez besoin</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet sapiente facere modi minima mollitia, excepturi
-                                    commodi corporis veritatis qui aliquam sed tenetur quibusdam eum nisi. Minus dignissimos omnis autem quisquam! Ipsa omnis
-                                    repudiandae, modi ex alias asperiores! Mollitia rerum nihil tenetur maiores libero obcaecati iure.
-                                </p>
-                                <a href="#">En savoir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<section class="hero">
+    <div class="wrapper">
+        <div class="hero__media">
+            <img src="assets/images/hero_bg.jpg" alt="background hero" />
         </div>
-    </body>
-</html>
+        <div class="hero__content">
+            <h1>Amateur de trames sonore de jeux video</h1>
+            <p>Nous vous offrons une belle selection de trames sonore que vous pouvez explorer avec vos propres goûts.</p>
+            <div class="boutons">
+                <a href="jeux.html" class="bouton">Explorer les jeux</a>
+                <a href="artistes.html" class="bouton">Découvrir les artistes</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="separateur">
+    <div class="wrapper">
+        <div class="separateur__content">
+            <h2>Pourquoi les VGM?</h2>
+            <p>
+                Les trames sonores de jeux vidéo créent des émotions uniques et nous replongent dans nos aventures préférées. VGM Enjoyment vous permet de
+                redécouvrir ces univers à travers leur musique.
+            </p>
+        </div>
+        <div class="separateur__media">
+            <img src="assets/images/sonic-orchestre.jpg" alt="sonic orchestra" />
+        </div>
+    </div>
+</section>
+
+<section class="jeux_artistes">
+    <div class="wrapper">
+        <h2>Jeux populaires</h2>
+        <p>Explorez les jeux vidéo avec des trames sonores marquantes.</p>
+        <div class="cartes_accueil">
+            <div class="carte_accueil">
+                <div class="carte__media">
+                    <img src="assets/images/breath-of-the-wild.jpg" alt="Breath of the Wild" />
+                </div>
+                <div class="carte__content">
+                    <h3>Breath of the Wild</h3>
+                </div>
+            </div>
+            <div class="carte_jeu">
+                <div class="carte__media">
+                    <img src="assets/images/elder-scrolls-skyrim.jpg" alt="Elder Scrolls V Skyrim" />
+                </div>
+                <div class="carte__content">
+                    <h3>Elder Scrolls V Skyrim</h3>
+                </div>
+            </div>
+            <div class="carte_jeu">
+                <div class="carte__media">
+                    <img src="assets/images/doom-eternal.jpeg" alt="Doom Eternal" />
+                </div>
+                <div class="carte__content">
+                    <h3>Doom Eternal</h3>
+                </div>
+            </div>
+        </div>
+        <a href="jeux.html">Explorer les jeux populaires</a>
+        <hr />
+        <h2>Artistes/Compositeurs</h2>
+        <p>Explorez les artistes et compositeurs qui ont créer ses chef-d’oeuvres pour les jeux vidéo</p>
+        <div class="cartes_accueil">
+            <div class="carte_accueil">
+                <div class="carte__media">
+                    <img src="assets/images/brian-tyler.jpg" alt="Brian Tyler" />
+                </div>
+                <div class="carte__content">
+                    <h3>Brian Tyler</h3>
+                </div>
+            </div>
+            <div class="carte_jeu">
+                <div class="carte__media">
+                    <img src="assets/images/mick-gordon.jpg" alt="Mick Gordon" />
+                </div>
+                <div class="carte__content">
+                    <h3>Mick Gordon</h3>
+                </div>
+            </div>
+            <div class="carte_jeu">
+                <div class="carte__media">
+                    <img src="assets/images/c418.jpg" alt="C418" />
+                </div>
+                <div class="carte__content">
+                    <h3>C418</h3>
+                </div>
+            </div>
+        </div>
+        <a href="artistes.html">Explorer les artistes/compositeurs</a>
+    </div>
+</section>
+
+{% include "_partials/_footer.html" %}
