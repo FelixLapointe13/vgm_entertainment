@@ -41,7 +41,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 70px;
+        gap: var(--spacing-slg);
         background-color: var(--color-black);
         padding: 40px 30px;
         border-radius: 15px;
