@@ -94,9 +94,21 @@
     }
 
     .carte_content {
+        position: relative;
         padding: 10px 50px;
         display: flex;
         flex-direction: column;
         gap: 5px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20px;
+            bottom: 130px;
+            height: 100%;
+            border: 1px solid var(--color-black);
+            border-radius: 5px;
+        }
     }
 }
