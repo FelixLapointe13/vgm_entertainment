@@ -65,6 +65,10 @@
     row-gap: 60px;
     text-align: left;
 
+    @media (width <= $breakpoint-sm) {
+        grid-template-columns: 1fr;
+    }
+
     .carte_media {
         position: relative;
         width: 100%;
