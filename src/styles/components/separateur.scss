@@ -10,4 +10,9 @@
         object-fit: cover;
         width: 1080px;
     }
+
+    @media (width <= $breakpoint-sm) {
+        flex-direction: column;
+        gap: 50px;
+    }
 }

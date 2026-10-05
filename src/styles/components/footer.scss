@@ -5,6 +5,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
+
+        @media (width <= $breakpoint-sm) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
     }
 
     .footer_gauche {
@@ -15,6 +20,14 @@
             align-items: center;
             gap: var(--spacing-md);
         }
+
+        @media (width <= $breakpoint-sm) {
+            text-align: center;
+
+            .logo__vgm {
+                justify-content: center;
+            }
+        }
     }
 
     .menu {
@@ -23,6 +36,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        padding: 0;
     }
 
     .footer_droite {
@@ -34,6 +48,10 @@
         .icon {
             width: 60px;
             height: 60px;
+        }
+
+        @media (width <= $breakpoint-sm) {
+            justify-content: center;
         }
     }
 

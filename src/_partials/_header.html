@@ -4,12 +4,12 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>VGM Entertainment</title>
-
+        <link rel="icon" type="image/png" href="assets/images/vgm_logo.png">
         <link rel="stylesheet" href="styles/main.css" />
         <script src="scripts/main.js" defer></script>
     </head>
-
-    <header class="header">
+<body>
+    <header class="header" data-component="Header">
         <div class="wrapper">
             <a href="index.html" class="logo__vgm">
                 <img src="assets/images/vgm_logo.png" alt="Vgm logo">
@@ -20,7 +20,26 @@
                 <li><a href="jeux.html">Jeux vidéo</a></li>
                 <li><a href="artistes.html">Artistes</a></li>
             </ul>
+            <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </button>
         </div>
+
+        <section class="header__menu">
+            <div class="wrapper">
+                <div class="logo__mobile">
+                    <img src="assets/images/vgm_logo.png" alt="VGM Entertainment Logo">
+                    <h2>VGM Entertainment</h2>
+                </div>
+                <ul class="menu__mobile">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="jeux.html">Jeux vidéo</a></li>
+                    <li><a href="artistes.html">Artistes</a></li>
+                </ul>
+            </div>
+        </section>
     </header>
 
-    <body>
+    

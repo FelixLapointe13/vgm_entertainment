@@ -1,4 +1,5 @@
 // importer vos composantes ici
+import Header from './components/Header.js';
 import YouTube from './components/YouTube.js';
 
 export default class ComponentFactory {
@@ -7,6 +8,7 @@ export default class ComponentFactory {
     this.componentList = {
       // Mettez votre liste de composantes ici
       YouTube,
+      Header,
     };
     this.init();
   }

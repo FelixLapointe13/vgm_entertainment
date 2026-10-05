@@ -5,6 +5,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--spacing-slg);
     margin: 85px 0;
+
+    @media (width <= $breakpoint-md) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (width <= $breakpoint-sm) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .carte_accueil {
